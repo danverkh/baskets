@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+    php:
+        build: ./
+        container_name: basket_example
+        ports:
+          - 8008:80
+        volumes:
+          - ./:/var/www/html
